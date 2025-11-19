@@ -482,69 +482,23 @@ nav ul li a:hover {
       .footer-container{
         background-color: green;
         display: flex;
-         justify-content: center;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
         justify-items: center;
+        flex-wrap: wrap;
       }
       .footer-content{
         display: flex;
         align-items: center;
-        gap: 2cm;
+        gap: 1cm;
       }
       .footer-icon-container{
         font-size: x-large;
         color: white;
-        margin-bottom: 1cm;
+        margin-bottom: 0.5cm;
       }
-
- /*------ after-send-alert-card-------*/
-  .after-send-alert-card{
-   background-color: blanchedalmond;
-   color: black;
-
-   }
-   .after-send-alert-card h5{
-   padding: 4px;
-   text-align: center;
-   }
-   .alert-quiz {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-.quiz-option {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.quiz-option p {
-  padding: 5px;
-  margin: 0; 
-}
-.quiz-option input{
-  cursor: pointer;
-}
-.error{
-  position: absolute;
-  color: rgb(204, 240, 204);
-}
-.succes-msg{
-  background-color: white;
-  color: black;
-  text-align: center;
-  width: fit-content;
-  height: 2.5cm;
-  display: none;
-}
-.succes-msg.fa-solid{
-  color: green;
-  font-size: 1cm;
-  background-color: yellow;
-}
-
      
 /*--------responsiveness-------------------*/
  @media only screen and (max-width: 600px) {
@@ -629,5 +583,10 @@ nav ul li a:hover {
   .nav-container {
     position: fixed;
   }
+  .footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
 }
