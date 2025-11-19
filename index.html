@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal potfolio</title>
+    <script defer ></script>
+    <link rel="stylesheet" href="styles.css">
+       <!---------------------------------------------------icon link------------------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+<!-------------my navigation----------------------------------------------->
+<div>
+    <div class="nav-container">
+     <div class="nav-logo"><i class="fa-solid fa-house"></i>  <img src="" alt="Adam studios"></div>
+
+     <nav class="nav-links" id="nav-links" >
+
+     <i id="nav-menu" class="fa-solid fa-bars"></i>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#Our services">Our services</a></li>
+        <li><a href="#About us">About us</a></li>
+       <li><a href="https://github.com/Adam-joseck-studios">Projects</a></li> 
+        <li><a href="#contactus">Contact us</a></li>
+      </ul>
+     </nav>
+    </div>
+    <!--------------------------hero section content------------------------------->
+     <div class="hero-content"class="scroll-fade" >
+        <h1>Smart Web Solutions Designed for Your Business.!</h1>
+        <p>Whether it’s a business or personal website, <br>
+            we create it not only stunning but also smart, fast, and built to make you stand out online</p>
+            <div class="hero-btns">
+                 <button id="action-btn" class="action-btn" onclick="displaycontact()" >Lets build your website</button>
+                 <button id="her0-test-btn" class="testimonial-btn" onclick="displaytestimonial()" >See what clients say</button>
+            </div>
+     </div>
+</div>
+<!----------------------------------service------------------------------------------------>
+<div class="scroll-fade" id="Our services">
+    <div class="service-container">
+        <div class="service-heading">
+            <h1><i class="fa-solid fa-gears"></i><BR>Our services</h1>
+              <h4>We provide digital solutions that help your brand look professional, attract customers, and grow online.</h4>
+        </div>
+        <!------------service cards----------------------------------------------------------------------------->
+        <div class="service-cards-container">
+            <div class="service-card">
+           <i class="fa-solid fa-code"></i>
+                <h2>Web development</h2>
+                <p>We design and build modern, <br>
+                    responsive websites that help <br>
+                    your business stand out online.</p>
+                    <button id="service-btn1" onclick="displaycontact()" >Want a website ?</button>
+            </div>
+             <div class="service-card">
+            <i class="fa-solid fa-shield-halved"></i>
+                <h2>Web management</h2>
+                <p>We keep your website updated<br>
+                     24/7, secure from attacks and<br>
+                      always visiblen and searchable. </p>
+                    <button onclick="displaycontact()" >Fix yours ?</button>
+            </div>
+             <div class="service-card">
+               <i class="fa-solid fa-pen-nib"></i>
+               <h2>Graphic design</h2>
+                <p>We turn messy ideas into clear, <br>
+                    eye-catching designs that help <br>
+                    your business stand out and.</p>
+                    <button onclick="displaycontact()" >Design yours ?</button>
+            </div>
+        </div>
+        <!----------------------image below service cards--------------------------------------->
+         <section class="skills-section" id="skills">
+  <h2>Our Skills</h2>
+  <p class="subtitle">A quick snapshot of our technical strengths</p>
+
+  <div class="skills-charts">
+    <div class="skill-item">
+      <div class="circle" data-percent="98">
+        <div class="inner-circle"><span>98%</span></div>
+      </div>
+      <p>Frontend Development</p>
+    </div>
+
+    <div class="skill-item">
+      <div class="circle" data-percent="92">
+        <div class="inner-circle"><span>92%</span></div>
+      </div>
+      <p>Backend Development</p>
+    </div>
+
+    <div class="skill-item">
+      <div class="circle" data-percent="85">
+        <div class="inner-circle"><span>85%</span></div>
+      </div>
+      <p>UI/UX Design</p>
+    </div>
+  </div>
+</section>
+<!-------------------------------------------------->
+    </div>
+</div>
+<!------------------------------------------about us section------------------------------------------->
+ <div class="scroll-fade" id="About us" >
+  <div class="about-container">
+    <div class="about-heading">
+      <h1><strong>About us</strong></h1>
+      <p>
+       <strong>Adam studios</strong>,is a digital solution brand dedicated to helping businesses<br>build strong online identities. We design and develop modern websites<br>that are fast, visually appealing for search engines.
+       <span id="dots">... </span>
+        <span id="more" style="display: none;" >
+          <br>We don't stop at launch, we offer continous web management to keep your website<br> updated, secure and at its best.<br>Whether you’re starting your online presence or upgrading your<br>current website, we create digital experiences that help you grow..
+        </span>
+        <button id="readMoreBtn" class="About-more-button" style="font-weight: bold;" >Learn more</button>
+      </p>
+        <div class="icon-container">
+          <a href="https://www.facebook.com/profile.php?id=100094371422217"><div><i class="fa-brands fa-facebook"></i>facebook</div></a>
+          <a href="https://www.tiktok.com/@adamstudios4"><div><i class="fa-brands fa-tiktok"></i>tiktok</div></a>
+         <a href="https://github.com/Adam-joseck-studios"> <div><i class="fa-brands fa-github"></i>Github</div></a>
+        </div>
+         <div class="icon-p" >
+            <p><i class="fa-solid fa-handshake"></i>  Interact with us on social media by simply clicking the links above</p>
+          </div>
+    </div>
+    <div class="about-image"><img src="images/office.jpg" alt=""  width="600px"  height="400px" ></div>
+  </div>
+ </div>
+ <!-----------------------------------testimonials------------------------------------>
+ <div class="scroll-fade" id="testimonial" >
+  <h2> <i class="fa-regular fa-comment"></i>  Testimonials from our beloved clients</h2>
+  <div class="testimonial-container">
+    <div class="testimonial-cards">
+      <div><img src="images/testimonial..1.jpg" alt=""  width="80px" height="70px" ></div>
+      <div>
+      <h5><strong>Joseck Ombati,<a href=""> GreenTech Solutions</a> </strong></h5>
+      <p>
+        “This guys are professional and creative.They built our company website, and it now perfectly reflects our brand. Clients love it.!”
+      </p>
+    </div>
+    </div>
+    <!-------------->
+    <div class="testimonial-cards">
+      <div><img src="images/1sharon.jpg" alt=""  width="70px" height="70px" ></div>
+      <div>
+      <h5><strong>Sharon Njeri,<a href="" >Duka la Dawa</a></strong></h5>
+      <p>
+        “Kila kitu ni sawa! Hii website yetu sasa inaonekana ya kisasa na rahisi kutumia. Kazi yetu ya mtandao iko sawa sasa,wateja wanapenda sana!”
+      </p>
+    </div>
+    </div>
+    <!---------------->
+    <div class="testimonial-cards">
+      <div><img src="images/linda.m.jpg" alt=""  width="70px" height="70px" ></div>
+      <div>
+      <h5><strong>Linda M.<a href="" >Youth Impact Kenya 🌍</a></strong></h5>
+      <p>
+        “Adam studios is the real deal. we’ve worked with them on two projects now, and the results are always amazing. Fast, professional, and super easy to work with!”
+      </p>
+    </div>
+    </div>
+    <!-------------->
+    <div class="testimonial-cards">
+      <div><img src="images/sophie.jpg" alt=""  width="70px" height="70px" ></div>
+      <div>
+      <h5><strong>Sophie K., Photographer 📸</strong></h5>
+      <p>
+        “I needed a portfolio that would make me stand out as a photographer, and they delivered exactly what I wanted. Clean, fast, and stylish!”
+      </p>
+    </div>
+    </div>
+    <!-------->
+  </div>
+  <!------------leave a message section------------------------------------------------->
+ </div>
+ <div class="scroll-fade" id="leaveamessage" >
+  <div class="leaveamessage-container">
+    <h2>Have a question, a project idea, or a website you want us to build?
+Fill out the form below and we’ll get back to you shortly.</h2>
+    <div class="contact-content">
+
+    <form action="" class="contact-form" id="contact-form" >
+      <lebel>Username</lebel >
+      <input id="username" type="text" placeholder=" your name ">
+      <small class="error" id="username-error"></small><br>
+       <lebel>Phone number</lebel>
+       <input id="phone" type="tel" placeholder="mobile no e.g +254...">
+       <small class="error" id="phone-error"></small><br>
+        <lebel>Email</lebel>
+        <input id="email" type="email" placeholder="example@gmail.com">
+        <small class="error" id="email-error"></small><br>
+        <label for="">Type a meassage</label><br>
+        <small class="error" id="textarea-error"></small>
+        <textarea id="textarea" name=""rows 5 ></textarea><br>
+         <button type="submit" id="Card-send-btn">Send</button>
+    </form>
+      <p id="success-msg"></p>
+    </div>
+  </div>
+ </div>
+ <!--------------------foter section---------------------------->
+ <div class="scroll-fade" id="contactus" >
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="contact-details">
+    <h2>Contact Info...</h2>
+    <p>
+      <span> <i class="fa-solid fa-envelope"></i>Ombatijoseck29@gmail.com</span><br>
+      <span> <i class="fa-solid fa-phone"></i>  0706604997</span><br>
+      <span> <i class="fa-brands fa-square-whatsapp"></i> 0706604997</span><br>
+       <span><i class="fa-solid fa-location-dot"></i> Nairobi-Kenya</p></span><br>
+    </p>
+  </div>
+   <div class="footer-icon-container">
+    <h5>Follow and connect with us</h5>
+          <a href="https://www.facebook.com/profile.php?id=100094371422217"><div><i class="fa-brands fa-facebook"></i>facebook</div></a>
+          <a href="https://www.tiktok.com/@adamstudios4"><div><i class="fa-brands fa-tiktok"></i>tiktok</div></a>
+         <a href="https://github.com/Adam-joseck-studios"> <div><i class="fa-brands fa-github"></i>Github</div></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+ </div>
+    
+
+<script>
+  //---------------------------------------------------------------------------------------------
+   function displaytestimonial(){
+    document.getElementById('testimonial').scrollIntoView({
+      behavior:"smooth"
+    })
+   }
+  //-------------------------------------------------------------------------------------------------
+   
+  function displaycontact(){
+    document.getElementById('leaveamessage').scrollIntoView({
+      behavior:"smooth"    
+    })
+    }
+ //------------------------------------about read more-----
+   const btn = document.getElementById("readMoreBtn");
+  const dots = document.getElementById("dots");
+  const moreText = document.getElementById("more");
+
+  btn.addEventListener("click", () => {
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline";
+      dots.style.display = "none";
+      btn.textContent = "Show less";
+    } else {
+      moreText.style.display = "none";
+      dots.style.display = "inline";
+      btn.textContent = "Learn more";
+    }
+  });
+//-------------------------------skills below service cards------------------------------------
+document.querySelectorAll('.circle').forEach(circle => {
+  const percent = circle.getAttribute('data-percent');
+  const degrees = (percent / 100) * 360;
+  circle.style.background = `conic-gradient(#007bff ${degrees}deg, #e6e6e6 ${degrees}deg)`;
+});
+</script>
+
+<script>
+const menuIcon = document.getElementById("nav-menu");
+const nav = document.querySelector(".nav-links");
+
+menuIcon.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  
+});
+const navLinks = nav.querySelectorAll("ul li a"); // select all nav links
+
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+});
+</script>
+<!-------------animations------------------->
+<script>
+const options = {
+  threshold: 0.2 // 20% visible triggers animation
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+
+    // When entering viewport
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      entry.target.classList.remove('hide');
+    }
+
+    // When leaving viewport
+    else {
+      entry.target.classList.remove('show');
+      entry.target.classList.add('hide');
+    }
+
+  });
+}, options);
+
+// Observe all elements with class="scroll-fade"
+document.querySelectorAll('.scroll-fade').forEach(el => observer.observe(el));
+
+</script>
+<!-----------------------form validaton----------------->
+<script>
+const form = document.getElementById('contact-form');
+const username = document.getElementById('username');
+const phone = document.getElementById('phone');
+const email = document.getElementById('email');
+const textarea = document.getElementById('textarea');
+const successMsg = document.getElementById('success-msg');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  clearErrors();
+  successMsg.innerText = "";
+
+  let hasError = false;
+
+  if (username.value.trim() === '') {
+    setError('username-error', 'Username is required');
+    hasError = true;
+  }
+
+  if (phone.value.trim() === '') {
+    setError('phone-error', 'Phone number is required');
+    hasError = true;
+  }
+
+  if (email.value.trim() === '') {
+    setError('email-error', 'Email is required');
+    hasError = true;
+  }
+
+  if (textarea.value.trim() === '') {
+    setError('textarea-error', 'Message cannot be empty');
+    hasError = true;
+  }
+
+  // If there's no errors, show  Success message
+  if (!hasError) {
+    successMsg.innerText = "Message submitted successfully!";
+
+    setTimeout(() => {
+      form.reset();
+      successMsg.innerText = "";
+      successMsg.innerText = "";
+    }, 2000);
+  }
+});
+
+
+// This code remove error when the user starts typing
+[username, phone, email, textarea].forEach(input => {
+  input.addEventListener('input', () => {
+    const errorId = input.id + "-error";
+    document.getElementById(errorId).innerText = "";
+  });
+});
+
+
+function setError(id, message) {
+  document.getElementById(id).innerText = message;
+  document.getElementById(id).style.color = '';
+}
+y
+
+function clearErrors() {
+  document.querySelectorAll('.error').forEach(e => e.innerText = "");
+}
+
+</script>
+</script>
+
+
+
+
+
+
+</body>
+</html>
