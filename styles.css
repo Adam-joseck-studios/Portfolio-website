@@ -42,7 +42,8 @@ html{
     justify-items: center;
 }
 .nav-logo{
-    font-size: larger;
+  font-size: larger;
+  font-style: italic;
 }
 #nav-menu{
   display: none;
@@ -68,7 +69,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: black;
-  padding: 10px 15px;
+  padding: 10px 10px;
   transition: 0.7s;
 }
 

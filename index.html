@@ -13,7 +13,7 @@
 <!-------------my navigation----------------------------------------------->
 <div>
     <div class="nav-container">
-     <div class="nav-logo"><i class="fa-solid fa-house"></i>  <img src="" alt="Adam studios"></div>
+     <div class="nav-logo"><h6>Adam studios</h6></div>
 
      <nav class="nav-links" id="nav-links" >
 
@@ -181,19 +181,22 @@
 Fill out the form below and we’ll get back to you shortly.</h2>
     <div class="contact-content">
 
-    <form action="" class="contact-form" id="contact-form" >
-      <lebel>Username</lebel >
-      <input id="username" type="text" placeholder=" your name ">
+    <form action="https://formspree.io/f/xyzowqjb" method="POST" class="contact-form" id="contact-form" >
+      <label>Username</label >
+      <input id="username" name="username" type="text" placeholder=" your name ">
       <small class="error" id="username-error"></small><br>
-       <lebel>Phone number</lebel>
-       <input id="phone" type="tel" placeholder="mobile no e.g +254...">
+
+       <label>Phone number</label>
+       <input id="phone" type="tel" name="phone" placeholder="mobile no e.g +254...">
        <small class="error" id="phone-error"></small><br>
-        <lebel>Email</lebel>
-        <input id="email" type="email" placeholder="example@gmail.com">
+
+        <label>Email</label>
+        <input id="email" type="email" name="email" placeholder="example@gmail.com">
         <small class="error" id="email-error"></small><br>
+
         <label for="">Type a meassage</label><br>
-        <small class="error" id="textarea-error"></small>
-        <textarea id="textarea" name=""rows 5 ></textarea><br>
+        <small class="error" id="textarea-error"></small><br>
+        <textarea id="textarea" name="message"rows 5 ></textarea><br>
          <button type="submit" id="Card-send-btn">Send</button>
     </form>
       <p id="success-msg"></p>
@@ -317,8 +320,8 @@ const email = document.getElementById('email');
 const textarea = document.getElementById('textarea');
 const successMsg = document.getElementById('success-msg');
 
-form.addEventListener('submit', e => {
-  e.preventDefault();
+form.addEventListener('submit', async (e) => {
+  e.preventDefault(); // keep to handle validation first
   clearErrors();
   successMsg.innerText = "";
 
@@ -328,36 +331,40 @@ form.addEventListener('submit', e => {
     setError('username-error', 'Username is required');
     hasError = true;
   }
-
   if (phone.value.trim() === '') {
     setError('phone-error', 'Phone number is required');
     hasError = true;
   }
-
   if (email.value.trim() === '') {
     setError('email-error', 'Email is required');
     hasError = true;
   }
-
   if (textarea.value.trim() === '') {
     setError('textarea-error', 'Message cannot be empty');
     hasError = true;
   }
 
-  // If there's no errors, show  Success message
+  // If no errors, send to Formspree
   if (!hasError) {
-    successMsg.innerText = "Message submitted successfully!";
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { "Accept": "application/json" }
+    });
 
-    setTimeout(() => {
+    if (response.ok) {
+      successMsg.innerText = "Message submitted successfully!";
       form.reset();
-      successMsg.innerText = "";
-      successMsg.innerText = "";
-    }, 2000);
+      setTimeout(() => {
+                successMsg.innerText = "";
+            }, 3000);
+    } else {
+      successMsg.innerText = "Failed to send message. Try again.";
+    }
   }
 });
 
-
-// This code remove error when the user starts typing
+// Remove error messages as user types
 [username, phone, email, textarea].forEach(input => {
   input.addEventListener('input', () => {
     const errorId = input.id + "-error";
@@ -365,23 +372,14 @@ form.addEventListener('submit', e => {
   });
 });
 
-
 function setError(id, message) {
   document.getElementById(id).innerText = message;
-  document.getElementById(id).style.color = '';
 }
-y
 
 function clearErrors() {
   document.querySelectorAll('.error').forEach(e => e.innerText = "");
 }
-
 </script>
-</script>
-
-
-
-
 
 
 </body>
