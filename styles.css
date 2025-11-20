@@ -150,9 +150,11 @@ nav ul li a:hover {
   position: relative;
   z-index: 1;
 }
-.service-heading h1{
+.service-heading h2{
     text-align: center;
     color: red;
+    margin-top: 1.5cm;
+    scroll-margin-top: 80px;
 }
 .service-heading h4{
   text-align: center;
@@ -224,15 +226,6 @@ nav ul li a:hover {
       background-color: rgba(0, 0, 0, 0.6);
       height: 100%;z-index: 9;
     }
-    .alertcardhero textarea{
-      width: 8cm;
-      height: 3cm;
-    }
-.alert-card textarea{
-    width: 8cm;
-    height: 4cm;
-    font-size: large;
-}
 /*----------------skills below service cards-----------------*/
 .skills-section {
   text-align: center;
@@ -337,7 +330,9 @@ nav ul li a:hover {
     display: flex;
   }
   .about-heading{
+    border: black;
     padding: 0.6cm;
+    margin-top: 1cm;
   }
   .icon-container{
     padding: 7px;

@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-KE">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal potfolio</title>
-    <script defer ></script>
-    <link rel="stylesheet" href="styles.css">
-       <!---------------------------------------------------icon link------------------------------>
+
+    <!-- Primary SEO -->
+    <title>Adam Studios — Web Development, Web Management & Digital Design</title>
+    <meta name="description" content="Adam Studios builds modern, fast and responsive websites for businesses. We offer web development, web management and graphic design solutions that help brands stand out online.">
+
+    <!-- Keywords (optional but helpful) -->
+    <meta name="keywords" content="web development, website design, kenya web developer, business website, digital solutions, Nairobi web developer, graphic design, portfolio website">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://adam-joseck-studios.github.io/Portfolio-website/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Adam Studios — Web Development & Digital Design">
+    <meta property="og:description" content="Get a modern, responsive, and professional website tailored for your business. Explore our services and portfolio.">
+    <meta property="og:image" content="https://adam-joseck-studios.github.io/Portfolio-website/images/og-image.jpg">
+    <meta property="og:url" content="https://adam-joseck-studios.github.io/Portfolio-website/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Adam Studios — Web Development & Digital Design">
+    <meta name="twitter:description" content="Smart web solutions designed to make your business stand out.">
+    <meta name="twitter:image" content="https://adam-joseck-studios.github.io/Portfolio-website/images/og-image.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Adam Studios",
+      "url": "https://adam-joseck-studios.github.io/Portfolio-website/",
+      "logo": "https://adam-joseck-studios.github.io/Portfolio-website/images/office.jpg",
+      "description": "A digital solutions brand providing web development, website management, and graphic design.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+254706604997",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://github.com/Adam-joseck-studios",
+        "https://www.facebook.com/profile.php?id=100094371422217",
+        "https://www.tiktok.com/@adamstudios4"
+      ]
+    }
+    </script>
+
+    <!-- Styles & Icons -->
+     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!------- hero image to load faster-->
+    <link rel="preload" as="image" href="images/hero img.jpg">
+
+    <!----------favicon----------->
+    <link rel="icon" type="image/png" href="images/laptop.jpg">
+
+    <!-------------Regional SEO----------------------->
+<link rel="alternate" hreflang="en-KE" href="https://adam-joseck-studios.github.io/Portfolio-website/">
+<link rel="alternate" hreflang="en-US" href="https://adam-joseck-studios.github.io/Portfolio-website/">
+<link rel="alternate" hreflang="en-GB" href="https://adam-joseck-studios.github.io/Portfolio-website/">
+<link rel="alternate" hreflang="en-CA" href="https://adam-joseck-studios.github.io/Portfolio-website/">
+<link rel="alternate" hreflang="en-AU" href="https://adam-joseck-studios.github.io/Portfolio-website/">
+<link rel="alternate" hreflang="x-default" href="https://adam-joseck-studios.github.io/Portfolio-website/">
+
+
+
 </head>
 <body>
 <!-------------my navigation----------------------------------------------->
@@ -20,8 +81,8 @@
      <i id="nav-menu" class="fa-solid fa-bars"></i>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#Our services">Our services</a></li>
-        <li><a href="#About us">About us</a></li>
+        <li><a href="#Services">Our services</a></li>
+        <li><a href="#About">About us</a></li>
        <li><a href="https://github.com/Adam-joseck-studios">Projects</a></li> 
         <li><a href="#contactus">Contact us</a></li>
       </ul>
@@ -39,10 +100,10 @@
      </div>
 </div>
 <!----------------------------------service------------------------------------------------>
-<div class="scroll-fade" id="Our services">
+<div class="scroll-fade" id="Services">
     <div class="service-container">
         <div class="service-heading">
-            <h1><i class="fa-solid fa-gears"></i><BR>Our services</h1>
+            <h2><i class="fa-solid fa-gears"></i><BR>Our services</h2>
               <h4>We provide digital solutions that help your brand look professional, attract customers, and grow online.</h4>
         </div>
         <!------------service cards----------------------------------------------------------------------------->
@@ -72,7 +133,7 @@
                     <button onclick="displaycontact()" >Design yours ?</button>
             </div>
         </div>
-        <!----------------------image below service cards--------------------------------------->
+        <!----------------------skills section--------------------------------------->
          <section class="skills-section" id="skills">
   <h2>Our Skills</h2>
   <p class="subtitle">A quick snapshot of our technical strengths</p>
@@ -104,12 +165,12 @@
     </div>
 </div>
 <!------------------------------------------about us section------------------------------------------->
- <div class="scroll-fade" id="About us" >
+ <div class="scroll-fade" id="About" >
   <div class="about-container">
     <div class="about-heading">
-      <h1><strong>About us</strong></h1>
+      <h2><strong>About us</strong></h2>
       <p>
-       <strong>Adam studios</strong>,is a digital solution brand dedicated to helping businesses<br>build strong online identities. We design and develop modern websites<br>that are fast, visually appealing for search engines.
+       <strong>Adam studios</strong>,is a digital office workspace showcasing modern web development and digital dgital solution brand dedicated to helping businesses<br>build strong online identities. We design and develop modern websites<br>that are fast, visually appealing for search engines.
        <span id="dots">... </span>
         <span id="more" style="display: none;" >
           <br>We don't stop at launch, we offer continous web management to keep your website<br> updated, secure and at its best.<br>Whether you’re starting your online presence or upgrading your<br>current website, we create digital experiences that help you grow..
@@ -125,7 +186,7 @@
             <p><i class="fa-solid fa-handshake"></i>  Interact with us on social media by simply clicking the links above</p>
           </div>
     </div>
-    <div class="about-image"><img src="images/office.jpg" alt=""  width="600px"  height="400px" ></div>
+    <div class="about-image"><img src="images/office.jpg" loading="lazy" alt="Adam Studios office workspace showcasing modern web development and digital design environment"  width="600px"  height="400px" ></div>
   </div>
  </div>
  <!-----------------------------------testimonials------------------------------------>
@@ -133,7 +194,7 @@
   <h2> <i class="fa-regular fa-comment"></i>  Testimonials from our beloved clients</h2>
   <div class="testimonial-container">
     <div class="testimonial-cards">
-      <div><img src="images/testimonial..1.jpg" alt=""  width="80px" height="70px" ></div>
+      <div><img src="images/testimonial..1.jpg" alt="Portrait of Joseck Ombati from GreenTech Solutions giving a positive website development testimonial"  width="80px" height="70px" ></div>
       <div>
       <h5><strong>Joseck Ombati,<a href=""> GreenTech Solutions</a> </strong></h5>
       <p>
@@ -143,7 +204,7 @@
     </div>
     <!-------------->
     <div class="testimonial-cards">
-      <div><img src="images/1sharon.jpg" alt=""  width="70px" height="70px" ></div>
+      <div><img src="images/1sharon.jpg" alt="Photo of Sharon Njeri from Duka la Dawa sharing her experience with Adam Studios web services"  width="70px" height="70px" ></div>
       <div>
       <h5><strong>Sharon Njeri,<a href="" >Duka la Dawa</a></strong></h5>
       <p>
@@ -153,7 +214,7 @@
     </div>
     <!---------------->
     <div class="testimonial-cards">
-      <div><img src="images/linda.m.jpg" alt=""  width="70px" height="70px" ></div>
+      <div><img src="images/linda.m.jpg" alt="Photo of Linda M. from Youth Impact Kenya giving a review about Adam Studios web development team"  width="70px" height="70px" ></div>
       <div>
       <h5><strong>Linda M.<a href="" >Youth Impact Kenya 🌍</a></strong></h5>
       <p>
@@ -163,7 +224,7 @@
     </div>
     <!-------------->
     <div class="testimonial-cards">
-      <div><img src="images/sophie.jpg" alt=""  width="70px" height="70px" ></div>
+      <div><img src="images/sophie.jpg" alt="Portrait of photographer Sophie K reviewing her custom photography portfolio website created by Adam Studios"  width="70px" height="70px" ></div>
       <div>
       <h5><strong>Sophie K., Photographer 📸</strong></h5>
       <p>
