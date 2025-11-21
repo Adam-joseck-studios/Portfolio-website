@@ -229,7 +229,7 @@ nav ul li a:hover {
 /*----------------skills below service cards-----------------*/
 .skills-section {
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 5rem 2rem;
   
 }
 
@@ -248,7 +248,7 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 .skills-charts p{
@@ -493,7 +493,14 @@ nav ul li a:hover {
       .footer-icon-container{
         font-size: x-large;
         color: white;
-        margin-bottom: 0.5cm;
+        margin-bottom: 0.7cm;
+        text-align: start;
+      }
+      .footer-links{
+        justify-content: start;
+        list-style: none;
+        text-align: start;
+        display: none;
       }
      
 /*--------responsiveness-------------------*/
@@ -575,6 +582,50 @@ nav ul li a:hover {
   color: red;
   text-decoration: underline;
   color: #fff;
+}
+/*skills circle-----------------*/
+.skills-charts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.skills-charts p{
+  padding: 5px;
+  margin-top: 1cm;
+}
+
+.circle {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: conic-gradient(#007bff 0deg, #007bff 0deg, #e46363 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+.circle:hover {
+  transform: scale(1.1);
+  cursor: default;
+}
+.skills-charts p{
+  padding: 1px;
+  margin-top: 0.5cm;
+  font-size: small;
+}
+.inner-circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #f7f2f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
   .nav-container {
     position: fixed;
